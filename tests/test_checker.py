@@ -137,7 +137,7 @@ class InputTests(unittest.TestCase):
         lines = self.sheet.read_text().splitlines()
         self.sheet.write_text(lines[0] + '\tbam\n' + '\n'.join(x + '\t' + x.split('\t')[0] + '.bam' for x in lines[1:]) + '\n')
         c = self.check()
-        self.assertTrue(any(x['check'] == 'bam.annotation_names' for x in self.errors(c)))
+        self.assertTrue(any(x['check'] == 'bam.annotation_names' for x in self.errors(c)), self.errors(c))
         self.gtf.write_text(self.gtf.read_text().replace('chr1\t', '1\t'))
         self.assertEqual(self.errors(self.check()), [])
         (self.root / 'wt1.bam.bai').unlink()

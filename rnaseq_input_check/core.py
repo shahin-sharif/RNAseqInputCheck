@@ -257,7 +257,7 @@ class Checker:
             if p.returncode:
                 raise ValueError(f'samtools {args[0]} failed: {p.stderr.strip()[:2000]}')
             return p.stdout
-        self.metrics['samtools'] = run('--version').splitlines()[0]
+        self.metrics['samtools'] = run('--version-only').strip()
         dictionary = None
         fai = None
         if self.cfg.get('fai'):

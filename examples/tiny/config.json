@@ -1,0 +1,9 @@
+{
+  "samples": "samples.tsv",
+  "gtf": "genes.gtf",
+  "design": "~ condition",
+  "reference_levels": {
+    "condition": "WT"
+  },
+  "expected_library_type": "ISR"
+}

@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use RNAseqInputCheck, cite this repository and the version used."
+title: "RNAseqInputCheck"
+version: 0.1.0
+date-released: 2026-10-02
+authors:
+  - family-names: "Sharif"
+    given-names: "Shahin Behrouz"
+repository-code: "https://github.com/shahin-sharif/RNAseqInputCheck"
+license: MIT
